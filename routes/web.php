@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test', function() {
+    $cookies = collect([
+        ['name' => "chocolate chip", "price" => 1.49],
+        ['name' => "oatmeal rasin", "price" => 1.49],
+        ['name' => "sugar cookie", "price" => 1.49],
+    ]);
+    return view('test', compact($cookies));
+});

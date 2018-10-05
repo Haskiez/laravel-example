@@ -18,5 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/randomData', function(Request $request) {
-    return response()->json(["name" => "Braden Haskell"]);
+    $name = collect(["name" => "Braden Haskell"]);
+    return response()->json($name);
 });
