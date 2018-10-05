@@ -21,5 +21,5 @@ Route::get('/test', function() {
         ['name' => "oatmeal rasin", "price" => 1.49],
         ['name' => "sugar cookie", "price" => 1.49],
     ]);
-    return view('test', compact($cookies));
+    return view('test', compact('cookies'));
 });

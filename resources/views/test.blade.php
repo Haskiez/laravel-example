@@ -9,13 +9,6 @@
 <body>
     <h1>Cookies and Prices</h1>
     <ul>
-        @php 
-            $cookies = $cookies = [
-                ['name' => "chocolate chip", "price" => 1.49],
-                ['name' => "oatmeal rasin", "price" => 1.49],
-                ['name' => "sugar cookie", "price" => 1.49],
-            ];
-        @endphp
         @foreach($cookies as $cookie)
             <li>{{$cookie['name']}} -- {{$cookie['price']}}</li>
         @endforeach
